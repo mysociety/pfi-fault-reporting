@@ -32,9 +32,11 @@
 </head>
 <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
+    {% include _header.html %}
+
     {{ content }}
     
+    {% include _footer.html %}
  
 </body>
 </html>
