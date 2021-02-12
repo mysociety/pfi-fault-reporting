@@ -1,0 +1,65 @@
+---
+layout: question
+title: "Fault location - Building"
+permalink: report-a-fault/location-place/
+---
+
+<form action="/location-site" method="get">
+
+<div class="nhsuk-form-group">
+
+  <div class="nhsuk-form-group">
+
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+        <h1 class="nhsuk-fieldset__heading">
+          Where is the fault?
+        </h1>
+      </legend>
+
+      <p>Reporting a fault at Site A, building B (<a href="../location-site/">change</a>)</p>
+  
+      <div class="nhsuk-radios nhsuk-u-margin-bottom-7">
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="place-dept" name="place" type="radio" value="place-dept">
+          <label class="nhsuk-label nhsuk-radios__label" for="place-dept">
+            A ward, clinic, or department
+          </label>
+        </div>
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="place-common" name="place" type="radio" value="place-common">
+          <label class="nhsuk-label nhsuk-radios__label" for="place-common">
+            A common or outdoor area
+          </label>
+        </div>
+
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="place-other" name="place" type="radio" value="place-other">
+          <label class="nhsuk-label nhsuk-radios__label" for="place-other">
+            Other
+          </label>
+        </div>
+  
+      </div>
+
+    <div class="nhsuk-checkboxes">
+
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="remember">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+          Remember my choice for next time?
+        </label>
+      </div>
+
+  
+  </div>
+
+</div>
+
+<button class="nhsuk-button" type="submit">
+Continue
+</button>
+
+</form>
