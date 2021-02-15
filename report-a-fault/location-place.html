@@ -4,7 +4,7 @@ title: "Fault location - Building"
 permalink: report-a-fault/location-place/
 ---
 
-<form action="/location-site" method="get">
+<form action="{{ 'report-a-fault/location-site' | relative_url }}" method="get">
 
 <div class="nhsuk-form-group">
 
@@ -17,7 +17,7 @@ permalink: report-a-fault/location-place/
         </h1>
       </legend>
 
-      <p>Reporting a fault at Site A, building B (<a href="../location-site/">change</a>)</p>
+      <p>Reporting a fault at Site A, building B (<a href="{{ 'report-a-problem/location-site' | relative_url }}">change</a>)</p>
   
       <div class="nhsuk-radios nhsuk-u-margin-bottom-7">
   
