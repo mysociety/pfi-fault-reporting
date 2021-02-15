@@ -20,21 +20,21 @@ permalink: report-a-fault/location-building/
       <div class="nhsuk-radios nhsuk-u-margin-bottom-7">
   
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="building-a" name="building" type="radio" value="building-a">
+          <input class="nhsuk-radios__input js-stateful" id="building-a" name="building" type="radio" value="building-a">
           <label class="nhsuk-label nhsuk-radios__label" for="building-a">
             Building A
           </label>
         </div>
   
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="building-b" name="building" type="radio" value="building-b">
+          <input class="nhsuk-radios__input js-stateful" id="building-b" name="building" type="radio" value="building-b">
           <label class="nhsuk-label nhsuk-radios__label" for="building-b">
             Building B
           </label>
         </div>
 
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="building-other" name="building" type="radio" value="building-other">
+          <input class="nhsuk-radios__input js-stateful" id="building-other" name="building" type="radio" value="building-other">
           <label class="nhsuk-label nhsuk-radios__label" for="building-other">
             Other
           </label>
@@ -42,11 +42,11 @@ permalink: report-a-fault/location-building/
   
       </div>
 
-      <div class="nhsuk-form-group nhsuk-u-margin-bottom-7">
+      <div class="nhsuk-form-group nhsuk-u-margin-bottom-7" data-stateful-key="building" data-stateful-showif="building-other">
       <label class="nhsuk-label" for="building-other-text">
         Building - other
       </label>
-      <input class="nhsuk-input" id="building-other-text" name="building-other-text" type="text">
+      <input class="nhsuk-input js-stateful" id="building-other-text" name="building-other-text" type="text">
     </div>
       
     </fieldset>
@@ -55,14 +55,14 @@ permalink: report-a-fault/location-building/
       <label class="nhsuk-label" for="example">
         Floor
       </label>
-      <input class="nhsuk-input" id="example" name="example" type="text">
+      <input class="nhsuk-input js-stateful" id="example" name="example" type="text">
     </div>
     
     <div class="nhsuk-checkboxes">
 
       <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="remember">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+        <input class="nhsuk-checkboxes__input js-stateful" id="remember" type="checkbox" value="remember">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="remember">
           Remember my choice for next time?
         </label>
       </div>
