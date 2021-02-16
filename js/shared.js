@@ -1,18 +1,16 @@
 $('[data-form-action]').on('change', function() {
-
+  
   var form = $(this).parents('form');
+  var checked = $('input[data-form-action]:checked');
 
   if (!form.data('originalAction')) {
     form.data('originalAction', form.attr('action'));
   }
 
-  form.attr('action', $(this).attr('data-form-action'));
-
-  if ($(this).is(':checked')) {
-    form.attr('action', $(this).attr('data-form-action'));
+  if (checked.length) {
+    form.attr('action', checked.attr('data-form-action'));
   } else {
     form.attr('action', form.data('originalAction'));
   }
 
 });
-

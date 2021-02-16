@@ -16,9 +16,48 @@ permalink: report-a-fault/contact-details/
           Contact details
         </h1>
       </legend>
-  
 
-      
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="contact-name">
+          Contact Name
+        </label>
+        <div class="nhsuk-hint contact-email-hint" id="contact-email-hint">
+          Who we should talk to about this fault. This doesn't have to be you
+        </div>
+        <input class="nhsuk-input js-stateful" id="contact-name" name="contact-name" type="text">
+      </div>
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="contact-email">
+          Contact email
+        </label>
+        <div class="nhsuk-hint contact-email-hint" id="contact-email-hint">
+          Where we can send confirmation and updates as the report progresses
+        </div>
+        <input class="nhsuk-input js-stateful" id="contact-email" name="contact-email" type="email">
+      </div>
+
+      <div class="nhsuk-form-group nhsuk-u-margin-bottom-7">
+        <label class="nhsuk-label" for="contact-phone">
+          Phone number
+        </label>
+        <div class="nhsuk-hint contact-phone-hint" id="contact-phone-hint">
+          We'll phone if we need to get in touch for more information. Please include extension number
+        </div>
+        <input class="nhsuk-input js-stateful" id="contact-phone" name="contact-phone" type="text">
+      </div>
+
+      <div class="nhsuk-checkboxes">
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input js-stateful" id="remember" type="checkbox" value="remember">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="remember">
+            Remember my answers for next time
+          </label>
+        </div>
+  
+    
+    </div>
       
     </fieldset>
 
