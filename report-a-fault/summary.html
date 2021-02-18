@@ -12,80 +12,40 @@ bodyclass: "summary"
 
 <h1>Summary</h1>
 <div class="summary">
+  <form action="{{ 'report-a-fault/confirmation' | relative_url }}" method="get">
+  <h2>Location</h2>
   <dl class="nhsuk-summary-list">
 
     <div class="nhsuk-summary-list__row">
       <dt class="nhsuk-summary-list__key">
-        Contact name
+        Location ID
       </dt>
       <dd class="nhsuk-summary-list__value">
-       <p class="js-stateful" data-stateful-key="contact-name">not set!</p>
+        <p class="js-stateful" data-stateful-key="location-id"></p>
       </dd>
+  
       <dd class="nhsuk-summary-list__actions">
         <a href="#">
-          Change<span class="nhsuk-u-visually-hidden"> name</span>
+          Change<span class="nhsuk-u-visually-hidden"> location id</span>
         </a>
       </dd>
     </div>
 
     <div class="nhsuk-summary-list__row">
       <dt class="nhsuk-summary-list__key">
-        Contact email
+       Site
       </dt>
       <dd class="nhsuk-summary-list__value">
-       <p class="js-stateful" data-stateful-key="contact-email"></p>
+        <p class="js-stateful" data-stateful-key="site"></p>
       </dd>
+  
       <dd class="nhsuk-summary-list__actions">
         <a href="#">
-          Change<span class="nhsuk-u-visually-hidden"> email</span>
+          Change<span class="nhsuk-u-visually-hidden"> site</span>
         </a>
       </dd>
     </div>
 
-    <div class="nhsuk-summary-list__row">
-      <dt class="nhsuk-summary-list__key">
-        Contact phone
-      </dt>
-      <dd class="nhsuk-summary-list__value">
-       <p class="js-stateful" data-stateful-key="contact-phone"></p>
-      </dd>
-      <dd class="nhsuk-summary-list__actions">
-        <a href="#">
-          Change<span class="nhsuk-u-visually-hidden"> phone</span>
-        </a>
-      </dd>
-    </div>
-  
-    <div class="nhsuk-summary-list__row">
-      <dt class="nhsuk-summary-list__key">
-        Fault description
-      </dt>
-      <dd class="nhsuk-summary-list__value">
-        <p class="js-stateful" data-stateful-key="fault-description"></p>
-      </dd>
-  
-      <dd class="nhsuk-summary-list__actions">
-        <a href="#">
-          Change<span class="nhsuk-u-visually-hidden"> description</span>
-        </a>
-      </dd>
-    </div>
-
-    <div class="nhsuk-summary-list__row">
-      <dt class="nhsuk-summary-list__key">
-        Asset ID
-      </dt>
-      <dd class="nhsuk-summary-list__value">
-        <p class="js-stateful" data-stateful-key="asset-id"></p>
-      </dd>
-  
-      <dd class="nhsuk-summary-list__actions">
-        <a href="#">
-          Change<span class="nhsuk-u-visually-hidden"> asset ID</span>
-        </a>
-      </dd>
-    </div>
-  
     <div class="nhsuk-summary-list__row">
       <dt class="nhsuk-summary-list__key">
         Building
@@ -118,15 +78,30 @@ bodyclass: "summary"
 
     <div class="nhsuk-summary-list__row">
       <dt class="nhsuk-summary-list__key">
-        Area description
+        Floor
       </dt>
       <dd class="nhsuk-summary-list__value">
-        <p class="js-stateful" data-stateful-key="area"></p>
+        <p class="j s-stateful" data-stateful-key="floor"></p>
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
         <a href="#">
-          Change<span class="nhsuk-u-visually-hidden"> area</span>
+          Change<span class="nhsuk-u-visually-hidden"> floor</span>
+        </a>
+      </dd>   
+    </div>
+
+    <div class="nhsuk-summary-list__row">
+      <dt class="nhsuk-summary-list__key">
+        Place
+      </dt>
+      <dd class="nhsuk-summary-list__value">
+        <p class="js-stateful" data-stateful-key="place"></p>
+      </dd>
+  
+      <dd class="nhsuk-summary-list__actions">
+        <a href="#">
+          Change<span class="nhsuk-u-visually-hidden"> Place</span>
         </a>
       </dd>
     </div>
@@ -148,15 +123,15 @@ bodyclass: "summary"
 
     <div class="nhsuk-summary-list__row">
       <dt class="nhsuk-summary-list__key">
-        Floor
+        Area description
       </dt>
       <dd class="nhsuk-summary-list__value">
-        <p class="js-stateful" data-stateful-key="floor"></p>
+        <p class="js-stateful" data-stateful-key="area"></p>
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
         <a href="#">
-          Change<span class="nhsuk-u-visually-hidden"> floor</span>
+          Change<span class="nhsuk-u-visually-hidden"> area</span>
         </a>
       </dd>
     </div>
@@ -172,36 +147,6 @@ bodyclass: "summary"
       <dd class="nhsuk-summary-list__actions">
         <a href="#">
           Change<span class="nhsuk-u-visually-hidden"> room number</span>
-        </a>
-      </dd>
-    </div>
-
-    <div class="nhsuk-summary-list__row">
-      <dt class="nhsuk-summary-list__key">
-        Location ID
-      </dt>
-      <dd class="nhsuk-summary-list__value">
-        <p class="js-stateful" data-stateful-key="location-id"></p>
-      </dd>
-  
-      <dd class="nhsuk-summary-list__actions">
-        <a href="#">
-          Change<span class="nhsuk-u-visually-hidden"> location id</span>
-        </a>
-      </dd>
-    </div>
-
-    <div class="nhsuk-summary-list__row">
-      <dt class="nhsuk-summary-list__key">
-        Place
-      </dt>
-      <dd class="nhsuk-summary-list__value">
-        <p class="js-stateful" data-stateful-key="place"></p>
-      </dd>
-  
-      <dd class="nhsuk-summary-list__actions">
-        <a href="#">
-          Change<span class="nhsuk-u-visually-hidden"> Place</span>
         </a>
       </dd>
     </div>
@@ -235,22 +180,42 @@ bodyclass: "summary"
         </a>
       </dd>
     </div>
+  </dl>
+</div>
+<div class="summary">
+  <h2>Fault</h2>
+  <dl class="nhsuk-summary-list">
 
     <div class="nhsuk-summary-list__row">
       <dt class="nhsuk-summary-list__key">
-       Site
+        Fault description
       </dt>
       <dd class="nhsuk-summary-list__value">
-        <p class="js-stateful" data-stateful-key="site"></p>
+        <p class="js-stateful" data-stateful-key="fault-description"></p>
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
         <a href="#">
-          Change<span class="nhsuk-u-visually-hidden"> site</span>
+          Change<span class="nhsuk-u-visually-hidden"> description</span>
         </a>
       </dd>
     </div>
 
+    <div class="nhsuk-summary-list__row">
+      <dt class="nhsuk-summary-list__key">
+        Asset ID
+      </dt>
+      <dd class="nhsuk-summary-list__value">
+        <p class="js-stateful" data-stateful-key="asset-id"></p>
+      </dd>
+  
+      <dd class="nhsuk-summary-list__actions">
+        <a href="#">
+          Change<span class="nhsuk-u-visually-hidden"> asset ID</span>
+        </a>
+      </dd>
+    </div>
+  
     <div class="nhsuk-summary-list__row">
       <dt class="nhsuk-summary-list__key">
        Photo
@@ -263,14 +228,108 @@ bodyclass: "summary"
         
       </dd>
     </div>
+  </dl>
+</div>
+
+<div class="summary">
+  <h2>Contact details</h2>
+  <dl class="nhsuk-summary-list">
+    
+    <div class="nhsuk-summary-list__row">
+      <dt class="nhsuk-summary-list__key">
+        Reporter name
+      </dt>
+      <dd class="nhsuk-summary-list__value">
+       <p class="js-stateful" data-stateful-key="reporter-name">not set!</p>
+      </dd>
+      <dd class="nhsuk-summary-list__actions">
+        <a href="#">
+          Change<span class="nhsuk-u-visually-hidden"> name</span>
+        </a>
+      </dd>
+    </div>
+
+    <div class="nhsuk-summary-list__row">
+      <dt class="nhsuk-summary-list__key">
+        Reporter email
+      </dt>
+      <dd class="nhsuk-summary-list__value">
+       <p class="js-stateful" data-stateful-key="reporter-email"></p>
+      </dd>
+      <dd class="nhsuk-summary-list__actions">
+        <a href="#">
+          Change<span class="nhsuk-u-visually-hidden"> email</span>
+        </a>
+      </dd>
+    </div>
+
+    <div class="nhsuk-summary-list__row">
+      <dt class="nhsuk-summary-list__key">
+        Reporter phone
+      </dt>
+      <dd class="nhsuk-summary-list__value">
+       <p class="js-stateful" data-stateful-key="reporter-phone"></p>
+      </dd>
+      <dd class="nhsuk-summary-list__actions">
+        <a href="#">
+          Change<span class="nhsuk-u-visually-hidden"> phone</span>
+        </a>
+      </dd>
+    </div>
   
+
+    <div class="nhsuk-summary-list__row">
+      <dt class="nhsuk-summary-list__key">
+        Contact name
+      </dt>
+      <dd class="nhsuk-summary-list__value">
+       <p class="js-stateful" data-stateful-key="contact-name"></p>
+      </dd>
+      <dd class="nhsuk-summary-list__actions">
+        <a href="#">
+          Change<span class="nhsuk-u-visually-hidden"> contact name</span>
+        </a>
+      </dd>
+    </div>
+
+    <div class="nhsuk-summary-list__row">
+      <dt class="nhsuk-summary-list__key">
+        Contact email
+      </dt>
+      <dd class="nhsuk-summary-list__value">
+       <p class="js-stateful" data-stateful-key="contact-email"></p>
+      </dd>
+      <dd class="nhsuk-summary-list__actions">
+        <a href="#">
+          Change<span class="nhsuk-u-visually-hidden"> contact email</span>
+        </a>
+      </dd>
+    </div>
+
+    <div class="nhsuk-summary-list__row">
+      <dt class="nhsuk-summary-list__key">
+        Contact phone
+      </dt>
+      <dd class="nhsuk-summary-list__value">
+       <p class="js-stateful" data-stateful-key="contact-phone"></p>
+      </dd>
+      <dd class="nhsuk-summary-list__actions">
+        <a href="#">
+          Change<span class="nhsuk-u-visually-hidden"> contact phone</span>
+        </a>
+      </dd>
+    </div>
+  
+    
+    
+    
   </dl>
 </div>
 
 <button class="nhsuk-button" type="submit">
   Submit
   </button>
-
+</form>
 </div>
 </div>
 

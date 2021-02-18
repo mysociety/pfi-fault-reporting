@@ -1,0 +1,87 @@
+---
+layout: question
+title: "Contact details"
+permalink: report-a-fault/reporter-details/
+---
+
+<form action="{{ 'report-a-fault/summary' | relative_url }}" method="get">
+
+<div class="nhsuk-form-group">
+
+  <div class="nhsuk-form-group">
+
+    <fieldset class="nhsuk-fieldset">
+      
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+        <h1 class="nhsuk-fieldset__heading">
+          Reporter details
+        </h1>
+      </legend>
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="reporter-name">
+          Your Name
+        </label>
+        <div class="nhsuk-hint reporter-email-hint" id="reporter-email-hint">
+          Who we should talk to about this fault. This doesn't have to be you
+        </div>
+        <input class="nhsuk-input js-stateful" id="reporter-name" name="reporter-name" type="text">
+      </div>
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="reporter-email">
+          Your email
+        </label>
+        
+        <input class="nhsuk-input js-stateful" id="reporter-email" name="reporter-email" type="email">
+      </div>
+
+      <div class="nhsuk-form-group nhsuk-u-margin-bottom-7">
+        <label class="nhsuk-label" for="reporter-phone">
+          Your number
+        </label>
+        <input class="nhsuk-input js-stateful" id="reporter-phone" name="reporter-phone" type="text">
+      </div>
+
+      <div class="nhsuk-radios nhsuk-u-margin-bottom-7">
+        <p>Who should we contact about this report?</p>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input js-stateful" id="place-dept" name="updates-details" type="radio" value="send-to-me" data-form-action="{{ 'report-a-fault/summary' | relative_url }}" checked="checked">
+          <label class="nhsuk-label nhsuk-radios__label" for="place-dept">
+            Me
+          </label>
+        </div>
+  
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input js-stateful" id="place-common" name="updates-details" type="radio" value="send-to-someone-else" data-form-action="{{ 'report-a-fault/contact-details' | relative_url }}">
+          <label class="nhsuk-label nhsuk-radios__label" for="place-common">
+            Someone else
+          </label>
+        </div>
+
+        </div>
+  
+      </div>
+
+      <div class="nhsuk-checkboxes">
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input js-stateful" id="remember" type="checkbox" value="remember">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="remember">
+            Remember my answers for next time
+          </label>
+        </div>
+  
+    
+    </div>
+      
+    </fieldset>
+
+
+</div>
+
+<button class="nhsuk-button" type="submit">
+Continue
+</button>
+
+</form>
