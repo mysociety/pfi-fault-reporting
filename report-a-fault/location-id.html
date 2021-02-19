@@ -2,14 +2,10 @@
 layout: question
 title: "Location ID"
 permalink: report-a-fault/location-id/
+action: "report-a-fault/describe-fault"
 ---
 
-<form action="{{ 'report-a-fault/describe-fault' | relative_url }}" method="get">
-
-<div class="nhsuk-form-group">
-
   <div class="nhsuk-form-group">
-
     <fieldset class="nhsuk-fieldset">
       <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
         <h1 class="nhsuk-fieldset__heading">
@@ -17,16 +13,17 @@ permalink: report-a-fault/location-id/
         </h1>
       </legend>
   
-
-      <div class="nhsuk-form-group nhsuk-u-margin-bottom-7">
-      <label class="nhsuk-label" for="location-id">
-        Location ID
-      </label>
-      <input class="nhsuk-input js-stateful" id="location-id" name="location-id" type="text">
-    </div>
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="location-id">
+          Location ID
+        </label>
+        <input class="nhsuk-input js-stateful" id="location-id" name="location-id" type="text">
+       </div>
       
     </fieldset>
+  </div>
 
+  <div class="nhsuk-form-group">
     <div class="nhsuk-checkboxes">
 
       <div class="nhsuk-checkboxes__item">
@@ -35,14 +32,18 @@ permalink: report-a-fault/location-id/
           Access to this location is restricted
         </label>
       </div>
-
   
+    </div>
   </div>
 
-</div>
+  <div class="nhsuk-form-group">
+    <div class="nhsuk-checkboxes">
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input js-stateful" id="remember" type="checkbox" value="remember" disabled="disabled">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="remember">
+          Remember my answers for next time
+        </label>
+      </div>
+    </div>
+  </div>
 
-<button class="nhsuk-button" type="submit">
-Continue
-</button>
-
-</form>

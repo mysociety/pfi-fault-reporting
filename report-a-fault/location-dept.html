@@ -2,42 +2,31 @@
 layout: question
 title: "Fault location - Ward, clinic or department"
 permalink: report-a-fault/location-dept/
+action: "report-a-fault/describe-fault"
 ---
 
-<form action="{{ 'report-a-fault/describe-fault' | relative_url }}" method="get">
+    <h1 class="nhsuk-heading-l">Where is the fault?</h1>
+    <p>Reporting a fault at Site A, building B (<a href="{{ 'report-a-problem/location-site' | relative_url }}">change</a>)</p>
 
-<div class="nhsuk-form-group">
+    <div class="nhsuk-form-group" data-stateful-key="dept">
+      <label class="nhsuk-label" for="dept">
+        Ward, clinic, or department name
+      </label>
+      <input class="nhsuk-input js-stateful" id="dept" name="dept" type="text">
+    </div>
 
-  <div class="nhsuk-form-group">
-
-    <fieldset class="nhsuk-fieldset">
-      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-        <h1 class="nhsuk-fieldset__heading">
-          Where is the fault?
-        </h1>
-      </legend>
-
-      <p>Reporting a fault at Site A, building B (<a href="{{ 'report-a-problem/location-site' | relative_url }}">change</a>)</p>
-  
-      <div class="nhsuk-form-group nhsuk-u-margin-bottom-7" data-stateful-key="dept">
-        <label class="nhsuk-label" for="dept">
-          Ward, clinic, or department name
-        </label>
-        <input class="nhsuk-input js-stateful" id="dept" name="dept" type="text">
+    <div class="nhsuk-form-group" data-stateful-key="dept">
+      <label class="nhsuk-label" for="room-no">
+        Room number or room description
+      </label>
+      <div class="nhsuk-hint room-no-description-hint" id="room-no-description-hint">
+        Rooms should have a number on the door. If a room number is not available, give an accurate description. <a href="#">Help finding room numbers</a>
       </div>
+      <input class="nhsuk-input js-stateful" id="room-no" name="room-no" type="text">
+    </div>
 
-      <div class="nhsuk-form-group nhsuk-u-margin-bottom-7" data-stateful-key="dept">
-        <label class="nhsuk-label" for="room-no">
-          Room number or room description
-        </label>
-        <div class="nhsuk-hint room-no-description-hint" id="room-no-description-hint">
-          Rooms should have a number on the door. If a room number is not available, give an accurate description. <a href="#">Help finding room numbers</a>
-        </div>
-        <input class="nhsuk-input js-stateful" id="room-no" name="room-no" type="text">
-      </div>
-
+    <div class="nhsuk-form-group">
       <div class="nhsuk-checkboxes">
-
         <div class="nhsuk-checkboxes__item">
           <input class="nhsuk-checkboxes__input js-stateful" id="restricted" name="restricted" type="checkbox" value="restricted" data-form-action="{{ 'report-a-fault/location-restricted' | relative_url }}">
           <label class="nhsuk-label nhsuk-checkboxes__label" for="restricted">
@@ -45,15 +34,15 @@ permalink: report-a-fault/location-dept/
           </label>
         </div>
       </div>
-  
-    </fieldset>
-  
-  </div>
+    </div>
 
-</div>
-
-<button class="nhsuk-button" type="submit">
-Continue
-</button>
-
-</form>
+    <div class="nhsuk-form-group">
+      <div class="nhsuk-checkboxes">
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input js-stateful" id="remember" type="checkbox" value="remember" disabled="disabled">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="remember">
+            Remember my answers for next time
+          </label>
+        </div>
+      </div>
+    </div>

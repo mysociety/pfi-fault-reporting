@@ -2,14 +2,10 @@
 layout: question
 title: "Fault location - Site"
 permalink: report-a-fault/location-site/
+action: "report-a-fault/location-building"
 ---
 
-<form action="{{ 'report-a-fault/location-building' | relative_url }}" method="get">
-
-<div class="nhsuk-form-group">
-
   <div class="nhsuk-form-group">
-
     <fieldset class="nhsuk-fieldset nhsuk-u-margin-bottom-7">
       <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
         <h1 class="nhsuk-fieldset__heading">
@@ -36,23 +32,16 @@ permalink: report-a-fault/location-site/
       </div>
       
     </fieldset>
-    
-    <div class="nhsuk-checkboxes">
-
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="remember" type="checkbox" value="remember">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="remember">
-          Remember my choice for next time?
-        </label>
-      </div>
-
-  
   </div>
 
-</div>
-
-<button class="nhsuk-button" type="submit">
-Continue
-</button>
-
-</form>
+  <div class="nhsuk-form-group">
+    <div class="nhsuk-checkboxes">
+      <div class="nhsuk-checkboxes__item">
+        <input class="nhsuk-checkboxes__input js-stateful" id="remember" type="checkbox" value="remember" disabled="disabled">
+        <label class="nhsuk-label nhsuk-checkboxes__label" for="remember">
+          Remember my answers for next time
+        </label>
+      </div>
+    </div>
+  </div>
+ 
