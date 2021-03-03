@@ -6,7 +6,12 @@ action: "report-a-fault/describe-fault/"
 ---
 
     <h1 class="nhsuk-heading-l">Where is the fault?</h1>
-    <p>Reporting a fault at Site A, building B (<a href="{{ 'report-a-problem/location-site' | relative_url }}">change</a>)</p>
+
+      <p>Reporting a fault at <span class="js-stateful" data-stateful-key="site"></span>,
+        <span class="js-stateful" data-stateful-key="building"></span>,
+        floor <span class="js-stateful" data-stateful-key="floor"></span>,
+        in a ward/clinic/department
+      (<a href="{{ 'report-a-fault/location-site/' | relative_url }}">change</a>)</p>
 
     <div class="nhsuk-form-group" data-stateful-key="dept">
       <label class="nhsuk-label" for="dept">

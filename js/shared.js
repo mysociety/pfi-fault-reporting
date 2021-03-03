@@ -15,6 +15,45 @@ $('[data-form-action]').on('change', function() {
 
 });
 
+$(function() {
+    var remembered = JSON.parse(localStorage.getItem('remembered') || '{}');
+    var current = location.pathname;
+
+    // Joined 'remember' checkboxes
+    var chain = {
+        '/report-a-fault/location-site/': ['/report-a-fault/location-building/'],
+        '/report-a-fault/location-building/': ['/report-a-fault/location-place/'],
+        '/report-a-fault/location-place/': ['/report-a-fault/location-dept/', '/report-a-fault/location-common/'],
+        '/report-a-fault/location-dept/': ['/report-a-fault/location-restricted/'],
+        '/report-a-fault/location-common/': ['/report-a-fault/location-restricted/'],
+        '/report-a-fault/location-id/': ['/report-a-fault/location-restricted/'],
+    };
+
+    // Delete subsequent remembered data if we've gone to a previous page in the hierarchy
+    var del = [current];
+    while (del.length) {
+        var p = del.shift();
+        delete remembered[p];
+        del.push.apply(del, chain[p]);
+    }
+
+    localStorage.setItem('remembered', JSON.stringify(remembered));
+
+    // Construct a reverse of the chain, to hide the remember checkbox if previous step wasn't ticked
+    var lastNotRemembered = {};
+    for (u in chain) {
+        chain[u].forEach(function(n) {
+            lastNotRemembered[n] = (typeof lastNotRemembered[n] === 'undefined') ? 1 : lastNotRemembered[n];
+            if (remembered[u]) {
+                lastNotRemembered[n] = 0;
+            }
+        });
+    }
+    if (lastNotRemembered[current]) {
+        $('#remember').parents('.nhsuk-form-group').hide();
+    }
+});
+
 $('form').on('submit', function() {
     var $form = $(this);
     var next = $form.attr('action');
