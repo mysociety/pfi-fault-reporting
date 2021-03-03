@@ -2,7 +2,7 @@
 layout: question
 title: "Fault location - location ID"
 bodyclass: "question"
-action: "report-a-fault/location-site"
+action: "report-a-fault/location-site/"
 ---
 <div class="nhsuk-form-group">
   <fieldset class="nhsuk-fieldset">
@@ -19,14 +19,14 @@ action: "report-a-fault/location-site"
     <div class="nhsuk-radios">
 
       <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input js-stateful" id="yes" name="id-known" type="radio" value="yes" data-form-action="{{ 'report-a-fault/location-id' | relative_url }}">
+        <input class="nhsuk-radios__input js-stateful" id="yes" name="id-known" type="radio" value="yes" data-form-action="{{ 'report-a-fault/location-id/' | relative_url }}">
         <label class="nhsuk-label nhsuk-radios__label" for="yes">
           Yes
         </label>
       </div>
 
       <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input js-stateful" id="no" name="id-known" type="radio" value="no" data-form-action="{{ 'report-a-fault/location-site' | relative_url }}">
+        <input class="nhsuk-radios__input js-stateful" id="no" name="id-known" type="radio" value="no" data-form-action="{{ 'report-a-fault/location-site/' | relative_url }}">
         <label class="nhsuk-label nhsuk-radios__label" for="no">
           No, try another way
         </label>

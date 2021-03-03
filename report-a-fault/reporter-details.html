@@ -2,7 +2,7 @@
 layout: question
 title: "Contact details"
 permalink: report-a-fault/reporter-details/
-action: "report-a-fault/summary"
+action: "report-a-fault/summary/"
 ---
     <h1 class="nhsuk-heading-l">
       Reporter details
@@ -38,14 +38,14 @@ action: "report-a-fault/summary"
         <div class="nhsuk-radios nhsuk-u-margin-bottom-4">
           <legend><p>Who should we contact about this report?</p></legend>
           <div class="nhsuk-radios__item">
-            <input class="nhsuk-radios__input js-stateful" id="place-dept" name="updates-details" type="radio" value="send-to-me" data-form-action="{{ 'report-a-fault/summary' | relative_url }}" checked="checked">
+            <input class="nhsuk-radios__input js-stateful" id="place-dept" name="updates-details" type="radio" value="send-to-me" data-form-action="{{ 'report-a-fault/summary/' | relative_url }}" checked="checked">
             <label class="nhsuk-label nhsuk-radios__label" for="place-dept">
               Me
             </label>
           </div>
     
           <div class="nhsuk-radios__item">
-            <input class="nhsuk-radios__input js-stateful" id="place-common" name="updates-details" type="radio" value="send-to-someone-else" data-form-action="{{ 'report-a-fault/contact-details' | relative_url }}">
+            <input class="nhsuk-radios__input js-stateful" id="place-common" name="updates-details" type="radio" value="send-to-someone-else" data-form-action="{{ 'report-a-fault/contact-details/' | relative_url }}">
             <label class="nhsuk-label nhsuk-radios__label" for="place-common">
               Someone else
             </label>

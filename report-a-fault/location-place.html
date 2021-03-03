@@ -2,7 +2,7 @@
 layout: question
 title: "Fault location - Place"
 permalink: report-a-fault/location-place/
-action: "report-a-fault/location-dept"
+action: "report-a-fault/location-dept/"
 ---
 
   <div class="nhsuk-form-group">
@@ -18,21 +18,21 @@ action: "report-a-fault/location-dept"
       <div class="nhsuk-radios">
   
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input js-stateful" id="place-dept" name="place" type="radio" value="place-dept" data-form-action="{{ 'report-a-fault/location-dept' | relative_url }}">
+          <input class="nhsuk-radios__input js-stateful" id="place-dept" name="place" type="radio" value="place-dept" data-form-action="{{ 'report-a-fault/location-dept/' | relative_url }}">
           <label class="nhsuk-label nhsuk-radios__label" for="place-dept">
             A ward, clinic, or department
           </label>
         </div>
   
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input js-stateful" id="place-common" name="place" type="radio" value="place-common" data-form-action="{{ 'report-a-fault/location-common' | relative_url }}">
+          <input class="nhsuk-radios__input js-stateful" id="place-common" name="place" type="radio" value="place-common" data-form-action="{{ 'report-a-fault/location-common/' | relative_url }}">
           <label class="nhsuk-label nhsuk-radios__label" for="place-common">
             A common or outdoor area
           </label>
         </div>
 
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input js-stateful" id="place-other" name="place" type="radio" value="place-other" data-form-action="{{ 'report-a-fault/location-common' | relative_url }}">
+          <input class="nhsuk-radios__input js-stateful" id="place-other" name="place" type="radio" value="place-other" data-form-action="{{ 'report-a-fault/location-common/' | relative_url }}">
           <label class="nhsuk-label nhsuk-radios__label" for="place-other">
             Other
           </label>
