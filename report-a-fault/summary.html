@@ -25,7 +25,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../location-id/">
           Change<span class="nhsuk-u-visually-hidden"> location id</span>
         </a>
       </dd>
@@ -40,7 +40,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../location-site/">
           Change<span class="nhsuk-u-visually-hidden"> site</span>
         </a>
       </dd>
@@ -55,7 +55,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../location-building/">
           Change<span class="nhsuk-u-visually-hidden"> building</span>
         </a>
       </dd>
@@ -70,7 +70,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../location-building/">
           Change<span class="nhsuk-u-visually-hidden"> building</span>
         </a>
       </dd>
@@ -85,7 +85,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../location-building/">
           Change<span class="nhsuk-u-visually-hidden"> floor</span>
         </a>
       </dd>   
@@ -100,7 +100,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../location-place/">
           Change<span class="nhsuk-u-visually-hidden"> Place</span>
         </a>
       </dd>
@@ -115,7 +115,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../location-dept/">
           Change<span class="nhsuk-u-visually-hidden"> department, ward or clinic</span>
         </a>
       </dd>
@@ -130,7 +130,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../location-common/">
           Change<span class="nhsuk-u-visually-hidden"> area</span>
         </a>
       </dd>
@@ -145,7 +145,7 @@ bodyclass: "summary"
       </dd>
 
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../location-common/">
           Change<span class="nhsuk-u-visually-hidden"> area</span>
         </a>
       </dd>
@@ -160,7 +160,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../location-dept/">
           Change<span class="nhsuk-u-visually-hidden"> room number</span>
         </a>
       </dd>
@@ -176,9 +176,10 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
-          Change<span class="nhsuk-u-visually-hidden"> restriction</span>
-        </a>
+        <a data-stateful-key="place" data-stateful-showif="place-common" href="../location-common/">Change<span class="nhsuk-u-visually-hidden"> restriction</span></a>
+        <a data-stateful-key="place" data-stateful-showif="place-other" href="../location-common/">Change<span class="nhsuk-u-visually-hidden"> restriction</span></a>
+        <a data-stateful-key="place" data-stateful-showif="place-dept" href="../location-dept/">Change<span class="nhsuk-u-visually-hidden"> restriction</span></a>
+        <a data-stateful-key="id-known" data-stateful-showif="yes" href="../location-id/">Change<span class="nhsuk-u-visually-hidden"> restriction</span></a>
       </dd>
     </div>
 
@@ -191,7 +192,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../location-restricted/">
           Change<span class="nhsuk-u-visually-hidden"> restriction details</span>
         </a>
       </dd>
@@ -211,7 +212,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../describe-fault/">
           Change<span class="nhsuk-u-visually-hidden"> description</span>
         </a>
       </dd>
@@ -226,7 +227,7 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../equipment-details/">
           Change<span class="nhsuk-u-visually-hidden"> asset ID</span>
         </a>
       </dd>
@@ -241,7 +242,9 @@ bodyclass: "summary"
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
-        
+      <a href="../photo/">
+          Change<span class="nhsuk-u-visually-hidden"> photo</span>
+        </a>
       </dd>
     </div>
   </dl>
@@ -259,7 +262,7 @@ bodyclass: "summary"
        <p class="js-stateful" data-stateful-key="reporter-name">not set!</p>
       </dd>
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../reporter-details/">
           Change<span class="nhsuk-u-visually-hidden"> name</span>
         </a>
       </dd>
@@ -273,7 +276,7 @@ bodyclass: "summary"
        <p class="js-stateful" data-stateful-key="reporter-email"></p>
       </dd>
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../reporter-details/">
           Change<span class="nhsuk-u-visually-hidden"> email</span>
         </a>
       </dd>
@@ -287,7 +290,7 @@ bodyclass: "summary"
        <p class="js-stateful" data-stateful-key="reporter-phone"></p>
       </dd>
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../reporter-details/">
           Change<span class="nhsuk-u-visually-hidden"> phone</span>
         </a>
       </dd>
@@ -302,7 +305,7 @@ bodyclass: "summary"
        <p class="js-stateful" data-stateful-key="contact-name"></p>
       </dd>
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../contact-details/">
           Change<span class="nhsuk-u-visually-hidden"> contact name</span>
         </a>
       </dd>
@@ -316,7 +319,7 @@ bodyclass: "summary"
        <p class="js-stateful" data-stateful-key="contact-email"></p>
       </dd>
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../contact-details/">
           Change<span class="nhsuk-u-visually-hidden"> contact email</span>
         </a>
       </dd>
@@ -330,7 +333,7 @@ bodyclass: "summary"
        <p class="js-stateful" data-stateful-key="contact-phone"></p>
       </dd>
       <dd class="nhsuk-summary-list__actions">
-        <a href="#">
+        <a href="../contact-details/">
           Change<span class="nhsuk-u-visually-hidden"> contact phone</span>
         </a>
       </dd>
