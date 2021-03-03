@@ -16,7 +16,7 @@ bodyclass: "summary"
   <h2>Location</h2>
   <dl class="nhsuk-summary-list">
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="id-known" data-stateful-showif="yes">
       <dt class="nhsuk-summary-list__key">
         Location ID
       </dt>
@@ -31,7 +31,7 @@ bodyclass: "summary"
       </dd>
     </div>
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="id-known" data-stateful-showif="no">
       <dt class="nhsuk-summary-list__key">
        Site
       </dt>
@@ -46,7 +46,7 @@ bodyclass: "summary"
       </dd>
     </div>
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="id-known" data-stateful-showif="no">
       <dt class="nhsuk-summary-list__key">
         Building
       </dt>
@@ -61,7 +61,7 @@ bodyclass: "summary"
       </dd>
     </div>
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="building" data-stateful-showif="building-other">
       <dt class="nhsuk-summary-list__key">
         Building - other
       </dt>
@@ -76,7 +76,7 @@ bodyclass: "summary"
       </dd>
     </div>
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="id-known" data-stateful-showif="no">
       <dt class="nhsuk-summary-list__key">
         Floor
       </dt>
@@ -91,7 +91,7 @@ bodyclass: "summary"
       </dd>   
     </div>
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="id-known" data-stateful-showif="no">
       <dt class="nhsuk-summary-list__key">
         Place
       </dt>
@@ -106,7 +106,7 @@ bodyclass: "summary"
       </dd>
     </div>
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="place" data-stateful-showif="place-dept">
       <dt class="nhsuk-summary-list__key">
         Department, ward or clinic
       </dt>
@@ -121,7 +121,7 @@ bodyclass: "summary"
       </dd>
     </div>
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="place" data-stateful-showif="place-common">
       <dt class="nhsuk-summary-list__key">
         Area description
       </dt>
@@ -136,7 +136,22 @@ bodyclass: "summary"
       </dd>
     </div>
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="place" data-stateful-showif="place-other">
+      <dt class="nhsuk-summary-list__key">
+        Area description
+      </dt>
+      <dd class="nhsuk-summary-list__value">
+        <p class="js-stateful" data-stateful-key="area"></p>
+      </dd>
+
+      <dd class="nhsuk-summary-list__actions">
+        <a href="#">
+          Change<span class="nhsuk-u-visually-hidden"> area</span>
+        </a>
+      </dd>
+    </div>
+
+    <div class="nhsuk-summary-list__row" data-stateful-key="place" data-stateful-showif="place-dept">
       <dt class="nhsuk-summary-list__key">
         Room number
       </dt>
@@ -156,7 +171,8 @@ bodyclass: "summary"
         Restricted access?
       </dt>
       <dd class="nhsuk-summary-list__value">
-        <p class="js-stateful" data-stateful-key="restricted"></p>
+        <p data-stateful-key="restricted" data-stateful-showif="restricted">Yes</p>
+        <p data-stateful-key="restricted" data-stateful-hideif="restricted">No</p>
       </dd>
   
       <dd class="nhsuk-summary-list__actions">
@@ -166,7 +182,7 @@ bodyclass: "summary"
       </dd>
     </div>
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="restricted" data-stateful-showif="restricted">
       <dt class="nhsuk-summary-list__key">
         Access restrictions
       </dt>
@@ -278,7 +294,7 @@ bodyclass: "summary"
     </div>
   
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="updates-details" data-stateful-showif="send-to-someone-else">
       <dt class="nhsuk-summary-list__key">
         Contact name
       </dt>
@@ -292,7 +308,7 @@ bodyclass: "summary"
       </dd>
     </div>
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="updates-details" data-stateful-showif="send-to-someone-else">
       <dt class="nhsuk-summary-list__key">
         Contact email
       </dt>
@@ -306,7 +322,7 @@ bodyclass: "summary"
       </dd>
     </div>
 
-    <div class="nhsuk-summary-list__row">
+    <div class="nhsuk-summary-list__row" data-stateful-key="updates-details" data-stateful-showif="send-to-someone-else">
       <dt class="nhsuk-summary-list__key">
         Contact phone
       </dt>
