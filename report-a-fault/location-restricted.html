@@ -13,6 +13,40 @@ action: "report-a-fault/describe-fault/"
         </h1>
       </legend>
 
+    <p data-stateful-key="id-known" data-stateful-showif="yes">
+      Reporting a fault at location ID <strong class="js-stateful" data-stateful-key="location-id"></strong>
+        <span data-stateful-key="restricted" data-stateful-showif="restricted">
+            <em>access restricted</em>
+        </span>
+
+      (<a href="{{ 'report-a-fault/location-id/' | relative_url }}">change</a>)
+    </p>
+
+    <p data-stateful-key="id-known" data-stateful-showif="no">
+      Reporting a fault at <span class="js-stateful" data-stateful-key="site"></span>,
+        <span class="js-stateful" data-stateful-key="building"></span>,
+        floor <strong class="js-stateful" data-stateful-key="floor"></strong>,
+
+        <span data-stateful-key="place" data-stateful-showif="place-common">
+            common or outdoor area,
+            <strong class="js-stateful" data-stateful-key="area"></strong>,
+        </span>
+        <span data-stateful-key="place" data-stateful-showif="place-other">
+            other location,
+            <strong class="js-stateful" data-stateful-key="area"></strong>,
+        </span>
+        <span data-stateful-key="place" data-stateful-showif="place-dept">
+            ward <strong class="js-stateful" data-stateful-key="dept"></strong>,
+            room <strong class="js-stateful" data-stateful-key="room-no"></strong>
+        </span>
+
+        <span data-stateful-key="restricted" data-stateful-showif="restricted">
+            <em>access restricted</em>
+        </span>
+
+      (<a href="{{ 'report-a-fault/location-site/' | relative_url }}">change</a>)
+    </p>
+
       <div class="nhsuk-form-group nhsuk-u-margin-bottom-4">
         <label class="nhsuk-label" for="access-restriction-details">
           Access restriction details
